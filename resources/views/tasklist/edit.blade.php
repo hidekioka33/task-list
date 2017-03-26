@@ -5,7 +5,7 @@
 <!-- ここにページ毎のコンテンツを書く -->
            <h1>id: {{ $tasklist->id }} のタスク編集ページ</h1>
 
-    {!! Form::model($,tasklist ['route' => ['tasklist.update', $tasklist->id], 'method' => 'put']) !!}
+    {!! Form::model($tasklist, ['route' => ['tasklist.update', $tasklist->id], 'method' => 'put']) !!}
 
         {!! Form::label('content', 'タスク:') !!}
         {!! Form::text('content') !!}
