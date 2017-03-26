@@ -10,6 +10,9 @@
         {!! Form::label('content', 'タスク名:') !!}
         {!! Form::text('content') !!}
 
+        {!! Form::label('status', 'status:') !!}
+        {!! Form::text('status') !!}
+ 
         {!! Form::submit('登録') !!}
 
     {!! Form::close() !!}
