@@ -128,5 +128,6 @@ class TasklistsController extends Controller
         //
         $tasklist = Tasklist::find($id);
         $tasklist->delete();
+         return redirect('/');
     }
 }
